@@ -7,9 +7,14 @@ namespace Open_Lab_10._01
         static void Main(string[] args)
         {
 
-            Book LOTR = new Book("the Lord of the Rings", 9250);
-            Console.WriteLine(LOTR.title);
-            //  LOTR.pages is private
+            Book LOTR = new Book();
+            LOTR.Title("The Lord of the Rings");
+            LOTR.Pages(9250);
+            LOTR.Category("epic high-fantasy novel");
+            LOTR.Author("John Ronald Reuel Tolkien");
+            LOTR.ReleaseDate(1954);
+
+            LOTR.ans();
         }
     }
 }
